@@ -1,0 +1,41 @@
+{
+    "api_version": {
+        "major": 10,
+        "minor": 2
+    },
+    "arch": "x86_64",
+    "authors": [
+        "Nick Shaheeed"
+    ],
+    "description": "Two classes (Package and PackageVersion) to faciliate creating new packages for ChuMP",
+    "files": [
+        "Chumpinate.chug",
+        "_docs\\chumpinate.html",
+        "_docs\\ckdoc.css",
+        "_docs\\index.html",
+        "_examples\\build-pkg-linux.ck",
+        "_examples\\build-pkg-mac.ck",
+        "_examples\\build-pkg-win.ck"
+    ],
+    "homepage": "https://chuck.stanford.edu/chump/",
+    "keywords": [
+        "util",
+        "chump",
+        "packages"
+    ],
+    "language_version_min": {
+        "major": 5,
+        "mega": 1,
+        "minor": 4,
+        "patch": 0
+    },
+    "license": "MIT",
+    "name": "Chumpinate",
+    "os": "windows",
+    "repository": "https://github.com/ccrma/chump",
+    "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
+    }
+}

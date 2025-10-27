@@ -31,7 +31,7 @@ vers.addExampleFile("AwesomeExample.ck");
 
 // zip up all our files into AwesomeEffect.zip, and tell Chumpinate what URL
 // this zip file will be located at.
-vers.generateVersion("./", "AwesomeEffect", "https://awesome.com/releases/1.0.0/AwesomeEffect.zip")
+vers.generateVersion("./", "AwesomeEffect", "https://awesome.com/releases/1.0.0/AwesomeEffect.zip");
 
 // pGenerate a version definition json file, stores this in "AwesomeEffect/<VerNo>/version.json"
 vers.generateVersionDefinition("version", "./");
