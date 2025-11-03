@@ -15,7 +15,7 @@ Package pkg("Chumbi");
 "https://github.com/SaintEverett/Chumbi" => pkg.repository;
 
 "MIT" => pkg.license;
-"Chugins for ambisonic processing within the ChucK programming language" => pkg.description;
+"Chugins for Ambisonic processing within the ChucK programming language" => pkg.description;
 
 ["Ambisonics", "Chugins", "Spatialization", "Spherical Harmonics"] => pkg.keywords;
 

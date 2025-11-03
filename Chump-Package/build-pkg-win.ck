@@ -22,28 +22,35 @@ Package pkg("Chumbi");
 
 PackageVersion vers("Chumbi", version);
 
-"10.2" => ver.apiVersion;
+"10.2" => vers.apiVersion;
 
-"1.5.4.0" => ver.languageVersionMin;
+"1.5.4.0" => vers.languageVersionMin;
 
-"windows" => ver.os;
-"x86_64" => ver.arch;
+"windows" => vers.os;
+"x86_64" => vers.arch;
 
-ver.addFile("/chugins/Encode.chug");
-ver.addFile("/chugins/Decode.chug");
-ver.addFile("/chugins/SADN.chug");
-ver.addFile("/chugins/BFormat.chug");
+vers.addFile("/chugins/Encode.chug");
+vers.addFile("/chugins/Decode.chug");
+vers.addFile("/chugins/SADN.chug");
+vers.addFile("/chugins/BFormat.chug");
 
-ver.addExampleFile("/examples/ambisonic-recorder.ck");
-ver.addExampleFile("/examples/basic-2nd-order-virtual-sources.ck");
-ver.addExampleFile("/examples/wireless-interface.ck");
+vers.addExampleFile("/examples/ambisonic-recorder.ck");
+vers.addExampleFile("/examples/basic-2nd-order-virtual-sources.ck");
+vers.addExampleFile("/examples/wireless-interface.ck");
 
-ver.addDocsFile("/chumbi-doc/chumbi.html");
-ver.addDocsFile("/chumbi-doc/index.html");
-ver.addDocsFile("/chumbi-doc/ckdoc.css");
+vers.addDocsFile("/chumbi-doc/chumbi.html");
+vers.addDocsFile("/chumbi-doc/index.html");
+vers.addDocsFile("/chumbi-doc/ckdoc.css");
 
-"chugins/Chumbi/" + ver.version() + "/" + ver.os() + "/Chumbi.zip" => string path;
+"chugins/Chumbi/" + vers.version() + "/" + vers.os() + "/Chumbi.zip" => string path;
 
 <<< path >>>;
 
-ver.generateVersion("./", "Chumbi_windows", "https://github.com/SaintEverett/Chumbi.git" + path);
+vers.generateVersion("./", "Chumbi_windows", "https://github.com/SaintEverett/Chumbi.git" + path);
+
+chout <= "Use the following commands to upload the package to CCRMA's servers:" <= IO.newline();
+chout <= "ssh nshaheed@ccrma-gate.stanford.edu \"mkdir -p ~/Library/Web/chugins/Chumpinate/"
+      <= vers.version() <= "/" <= vers.os() <= "\"" <= IO.newline();
+chout <= "scp Chumpinate_windows.zip nshaheed@ccrma-gate.stanford.edu:~/Library/Web/" <= path <= IO.newline();
+
+vers.generateVersionDefinition("Chumpinate_windows", "./" );

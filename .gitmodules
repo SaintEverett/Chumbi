@@ -1,0 +1,3 @@
+[submodule "Chump-Package/Encode-Decode.chug"]
+	path = Chump-Package/Encode-Decode.chug
+	url = https://github.com/SaintEverett/Encode-Decode.chug.git

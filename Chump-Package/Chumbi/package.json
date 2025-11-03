@@ -1,0 +1,16 @@
+{
+    "authors": [
+        "Everett M. Carpenter"
+    ],
+    "description": "",
+    "homepage": "https://github.com/SaintEverett/Chumbi.git",
+    "keywords": [
+        "ambisonics",
+        "chugins",
+        "spatialization",
+        "multichannel"
+    ],
+    "license": "MIT",
+    "name": "Chumbi",
+    "repository": "https://github.com/SaintEverett/Chumbi.git"
+}
